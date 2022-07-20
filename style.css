@@ -1,17 +1,23 @@
+
+Body{
+    padding: 0px;
+    margin-top: -37px;
+    box-sizing: border-box;
+}
 .Hero{
-    background-image: url(./img/back1.jpeg);height: 80vh;background-repeat: no-repeat;background-size: cover;
+    background-image: url(./img/back1.jpeg);height: 90vh;background-repeat: no-repeat;background-size: cover;
 }
 .inner{
     align-items: center;justify-content: center;text-align: center;
 }
 .Hero h1{
-    color: black;padding-top: 190px;font-size: 50px;font-family: Arial, Helvetica, sans-serif;
+    color: black;padding-top: 190px;font-size: 60px;font-family: Arial, Helvetica, sans-serif;
 }
 .inner p{
-    font-size: 22px;font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;font-family: Arial, Helvetica, sans-serif;
 }
 .inner .btn{
-    padding: 20px 40px;cursor: pointer;;background-color:rgb(25, 188, 156) ;border:none;border-radius: 3px;color: white;margin-top: 10px;
+    padding: 20px 40px;cursor: pointer;;background-color:rgb(25, 188, 156) ;border:none;border-radius: 3px;color: white;margin-top: 10px;font-size: 20px;
 }
 .offers{
     align-items: center;justify-content: center;text-align: center;height: 40vh;
@@ -23,7 +29,7 @@
     font-size: 17px;font-family: Arial, Helvetica, sans-serif;
 }
 .offers .button{
-    padding: 20px 40px;cursor: pointer;;background-color:rgb(1, 2, 2) ;border:none;border-radius: 3px;color: white;margin-top: 10px;
+    padding: 20px 40px;cursor: pointer;;background-color:rgb(1, 2, 2) ;border:none;border-radius: 3px;color: white;margin-top: 10px;font-size: 20px;
 }
 
 .services{
@@ -53,7 +59,7 @@
 }
 button{
   
-    padding: 20px 40px;cursor: pointer;;background-color:rgb(25, 188, 156) ;border:none;border-radius: 3px;color: white;margin-top: 30px;
+    padding: 20px 40px;cursor: pointer;;background-color:rgb(25, 188, 156) ;border:none;border-radius: 3px;color: white;margin-top: 30px;font-size: 20px;
   
 }
 .portfolio{
@@ -84,16 +90,16 @@ button{
     position: absolute;top: 100px;
 }
 .buttons{
-    align-items: center;justify-content: center;text-align: center;background-color: rgb(30, 128, 159);height: 30vh;
+    align-items: center;justify-content: center;text-align: center;background-color: rgb(30, 128, 159);height: 30vh;font-size: 20px;
 }
 .buttons h4{
     font-size: 25px;padding-top: 60px;font-family: Arial, Helvetica, sans-serif;color: white;margin: 0px;
 }
 .buttons .bt{
-    padding: 20px 40px;font-family: Arial, Helvetica, sans-serif;
+    padding: 20px 40px;font-family: Arial, Helvetica, sans-serif;font-size: 20px;
 }
 .buttons .btn{
-    background-color: rgb(52, 58, 64);color: white; padding: 20px 40px;font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(52, 58, 64);color: white; padding: 20px 40px;font-family: Arial, Helvetica, sans-serif;font-size: 20px;
 }
 .footer{
     background-image: url(./img/footer.png);height: 70vh;

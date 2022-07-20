@@ -1,125 +1,228 @@
-
-
-.header{
-    background-color: rgb(236, 220, 81);
-    height: 7vh;
-    position: absolute;
-    width: 98.7%;
-    top: 0;
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  width: 100%;
 }
 
-  
-  .header ul{
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    overflow: hidden;
-    color: black;
-  text-align: center;
+.header .ham {
+  position: relative;
+  z-index: 998;
+}
+
+.header .ham .slide {
+  position: absolute;
+  right: 0;
+  font-size: 30px;
+  opacity: 0;
+}
+
+.header .ham:hover .slide {
+  right: 50px;
+  opacity: 1;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.header .stayopen .slide {
+  right: 50px;
+  opacity: 1;
+  -webkit-transition: 1s;
+  transition: 1s;
+  color: white;
+}
+
+.header .menu {
+  background-color: #1D809F;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  left: -100vw;
+  opacity: 0;
+  -webkit-transition: .4s ease;
+  transition: .4s ease;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 997;
+  height: 100vh;
+}
+
+.header .menu .menu-item {
+  padding: 15px 20px;
+  list-style: none;
+}
+
+.header .menu .menu-item a {
+  color: white;
+  text-decoration: none;
+}
+
+.header .hamburger {
+  height: 30px;
+  width: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  margin: 40px;
+  background-color: rgba(0, 0, 0, 0.377);
+  padding: 10px;
+  border-radius: 7px;
+}
+
+.header .hamburger .bar {
+  height: 4px;
+  width: 100%;
+  background-color: white;
+  border-radius: 20px;
+  z-index: 998;
+}
+
+.header .hamburger #top {
+  -webkit-transform: translateY(-6px);
+          transform: translateY(-6px);
+  -webkit-transition: all .6s ease;
+  transition: all .6s ease;
+}
+
+.header .hamburger #middle {
+  -webkit-transition: all .6s ease;
+  transition: all .6s ease;
+  color: white;
+}
+
+.header .hamburger #bottom {
+  -webkit-transform: translateY(6px);
+          transform: translateY(6px);
+  -webkit-transition: all .6s ease;
+  transition: all .6s ease;
+}
+
+.header .open {
+  opacity: 1;
+  left: 0;
+}
+
+.header .open .slide {
+  right: 50px;
+  opacity: 1;
+  z-index: 999;
+  color: white;
+}
+
+.header .open #top {
+  -webkit-transform: translateY(6px) rotate(45deg);
+          transform: translateY(6px) rotate(45deg);
+  background-color: white;
+}
+
+.header .open #middle {
+  opacity: 0;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  background-color: white;
+}
+
+.header .open #bottom {
+  -webkit-transform: translateY(-6px) rotate(135deg);
+          transform: translateY(-6px) rotate(135deg);
+  background-color: white;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 568px) {
+  .header .menu {
+    top: 0;
   }
-  
-  .header ul a{
-    display: block;
-    padding: 22px;
-    text-decoration: none;
-    color:white;
-  font-size: 17px;
-  font-family: "light";
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+  .header .menu {
+    top: 0;
   }
-  
-  span{
-    color: #fd750e;
-  }
-  
-  .header .logo{
-    float: left;
-    display: block;
-    font-size: 2rem;
-    padding: 10px 20px;
-    text-decoration: none;
-    color: black;
-    font-family: "medium";
-  }
-  
-  .header .menu{
-    clear: both;
-    max-height: 0;
-    transition: max-height .2s ease-out;
-    background-color: red;
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .hamburger:hover {
+    height: 30px;
+    width: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-  align-items: center;
-  }
-  .header .icons{display: flex;}
-  
-  .header .menu-icon{
-    padding: 23px 20px;
-    position: absolute;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     cursor: pointer;
-    top: 22px;
-    right: 30px;
-   
   }
-  
-  .header .menu-icon .nav-icon{
-    background: black;
-    display: block;
-    height: 3px;
-    width: 36px;
-    position: absolute;
-    transition: background .2s ease-out;
-    top: 5px;
-    z-index: 2;
-    
+  .hamburger:hover #top {
+    -webkit-transform: translateY(6px) rotate(45deg);
+            transform: translateY(6px) rotate(45deg);
   }
-  
-  .header .menu-icon .nav-icon:before{
-    background: black;
-    content: "";
-    display: block;
-    margin-top: 0px;
-    height: 3px;
-    width: 36px;
-    position: absolute;
-    transition: all .2 ease-out;
-    top: 7px;
-    z-index: 2;
+  .hamburger:hover #middle {
+    opacity: 0;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
-  
-  .header .menu-icon .nav-icon:after{
-    background: black;
-    content: "";
-    display: block;
-    margin-bottom: 0px;
-    height: 3px;
-    width: 36px;
-    position: absolute;
-    transition: all .2 ease-out;
-    top: -7px;
-    z-index: 2;
+  .hamburger:hover #bottom {
+    -webkit-transform: translateY(-6px) rotate(-45deg);
+            transform: translateY(-6px) rotate(-45deg);
   }
-  
-  .header .menu-btn{
-    display: none;
+  .menu .menu-item a {
+    font-size: 47px;
   }
-  
-  .header .menu-btn:checked ~ .menu{
-    min-height: 600px;position: absolute;width: 100%;z-index: 1;left: 0;
-  
+  .open:hover {
+    opacity: 1;
+    left: 0;
   }
-  
-  .header .menu-btn:checked ~ .menu-icon .nav-icon{
-    background: transparent;
+  .open:hover #top {
+    -webkit-transform: translateY(-6px);
+            transform: translateY(-6px);
+    -webkit-transition: all .6s ease;
+    transition: all .6s ease;
   }
-  
-  .header .menu-btn:checked ~ .menu-icon .nav-icon:before{
-    transform: rotate(-45deg);
-    top: 0;
+  .open:hover #middle {
+    -webkit-transition: all .6s ease;
+    transition: all .6s ease;
+    opacity: 1;
+    color: white !important;
   }
-  
-  .header .menu-btn:checked ~ .menu-icon .nav-icon:after{
-    transform: rotate(45deg);
-    top: 0;
+  .open:hover #bottom {
+    -webkit-transform: translateY(6px);
+            transform: translateY(6px);
+    -webkit-transition: all .6s ease;
+    transition: all .6s ease;
   }
-  
+}
+/*# sourceMappingURL=menu.css.map */
